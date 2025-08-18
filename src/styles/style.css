@@ -1,0 +1,68 @@
+/* #region html */
+html {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+}
+
+/* #region body */
+body {
+  margin: 0;
+}
+
+/* #region header */
+.header {
+  color: #FFFF;
+  box-sizing: border-box;
+  padding: 24px 20px 88px;
+  background-image: url(/src/images/bg-img.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top a {
+  display: flex;
+}
+
+.header__icons {
+  display: flex;
+  gap: 24px;
+}
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon--phone {
+  background-image: url(/src/images/icons/Icon-Phone-call.png);
+}
+
+.icon--burger {
+  background-image: url(/src/images/icons/Icon-Burger-menu.png);
+}
+
+.header__title {
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+
+}
+
+
