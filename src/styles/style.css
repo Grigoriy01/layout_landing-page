@@ -1,5 +1,9 @@
+:root {
+  --nav-color:#1D1D1D;
+}
+
 /* #region html */
-html {
+.page {
   font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -7,18 +11,20 @@ html {
 
 }
 
-/* #region body */
-body {
+
+.page__body {
   margin: 0;
 }
+
+/* #endregion */
 
 /* #region header */
 .header {
   color: #FFFF;
   box-sizing: border-box;
   padding: 24px 20px 88px;
-  background-image: url(/src/images/bg-img.png);
   height: 100vh;
+  background-image: url(/src/images/bg-img.png);
   background-size: cover;
   background-position: center;
 
@@ -37,6 +43,51 @@ body {
   display: flex;
 }
 
+.header__title {
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+
+}
+
+
+/* #endregion */
+
+/* #region menu */
+
+/* #endregion */
+
+/* #region menu */
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: var(--nav-color);
+  box-sizing: border-box;
+  padding: 24px 20px 88px;
+  height: 100vh;
+  background-color: #C2C2C2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #endregion */
+
+/* #region icons */
 .header__icons {
   display: flex;
   gap: 24px;
@@ -56,13 +107,30 @@ body {
   background-image: url(/src/images/icons/Icon-Burger-menu.png);
 }
 
-.header__title {
-  text-align: center;
-  margin: 0;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 100%;
-
+.icon--close {
+  background-image: url(/src/images/icons/menu-button-close.png);
 }
 
+/* #endregion */
+
+/* #region nav */
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--nav-color);
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* #endregion */
 
