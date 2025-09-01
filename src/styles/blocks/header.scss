@@ -1,0 +1,29 @@
+.header {
+  color: #ffff;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url(/src/images/bg-img.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__bottom {
+    padding-bottom: 88px;
+
+    @include contentPaddingInline;
+    
+    @include onTablet {
+      padding-block: 130px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+}
