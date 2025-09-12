@@ -9,6 +9,8 @@
   }
 
   &__link {
+    display: inline-block;
+    position: relative;
     text-decoration: none;
     color: $nav-color;
     font-weight: 600;
@@ -16,5 +18,24 @@
     line-height: 22px;
     letter-spacing: 2px;
     text-transform: uppercase;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      display: block;
+      background-color: $nav-color;
+      height: 1px;
+      width: 100%;
+
+      transform: scale(0);
+      transition: transform 0.3s;
+    }
+
+    &:hover::after {
+      transform: scale(1);
+      transform-origin: left;
+    }
   }
 }
