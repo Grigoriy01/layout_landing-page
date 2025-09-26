@@ -1,4 +1,5 @@
 .header {
+  // display: none !important;
   color: #ffff;
   box-sizing: border-box;
   height: 100vh;
@@ -11,12 +12,14 @@
 
   &__bottom {
     padding-bottom: 88px;
+    padding-inline: 20px;
 
-    @include content-padding-inline;
-
-    @include on-tablet {
+    @include on-tablet($tablet-min-width) {
       padding-block: 130px;
+      padding-inline: 72px;
     }
+
+    // @include content-padding-inline;
   }
 
   &__title {

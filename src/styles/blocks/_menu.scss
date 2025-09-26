@@ -9,7 +9,11 @@
   }
 
   &__content {
-    @include content-padding-inline;
+    padding-inline: 20px;
+
+    @include on-tablet($tablet-min-width) {
+    padding-inline: 72px;
+    }
   }
 
   &__phone-number {
