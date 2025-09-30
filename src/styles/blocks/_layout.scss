@@ -3,11 +3,32 @@
   flex-direction: column;
 
   .section {
-    margin-top: $marg-lay;
+    margin-top: $marg-lay-mobile;
   }
 
   .section:first-child,
   .section:last-child {
-    margin-top: $marg-lay-first-last;
+    margin-top: $marg-lay-first-last-mobile;
+  }
+
+  @include on-tablet($tablet-min-width) {
+    .section {
+      margin-top: $marg-lay-tablet;
+    }
+  }
+
+  @include on-desktop($desktop-min-width) {
+    .section {
+      margin-top: $marg-lay-desktop;
+    }
+
+    .section:first-child {
+      margin-top: $marg-lay-first-desktop;
+    }
+
+    .section:last-child {
+      margin-top: $marg-lay-last-desktop;
+    }
+
   }
 }

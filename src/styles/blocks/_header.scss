@@ -1,6 +1,6 @@
 .header {
   // display: none !important;
-  color: #ffff;
+  color: $primary-text-color;
   box-sizing: border-box;
   height: 100vh;
   background-image: url(/src/images/bg-img.png);
@@ -12,14 +12,12 @@
 
   &__bottom {
     padding-bottom: 88px;
-    padding-inline: 20px;
+    padding-inline: $pad-inline-content-mobile;
 
     @include on-tablet($tablet-min-width) {
       padding-block: 130px;
-      padding-inline: 72px;
+      padding-inline: $pad-inline-content-tablet;
     }
-
-    // @include content-padding-inline;
   }
 
   &__title {

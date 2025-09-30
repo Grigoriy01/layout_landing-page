@@ -4,7 +4,15 @@ $desktop-min-width: 1024px;
 
 // color
 $nav-color: #1d1d1d;
+$primary-text-color: #ffff;
 
 // padding / margin
-$marg-lay: 92px;
-$marg-lay-first-last: 60px;
+$marg-lay-mobile: 92px;
+$marg-lay-first-last-mobile: 60px;
+$marg-lay-tablet: 120px;
+$marg-lay-first-desktop: 120px;
+$marg-lay-last-desktop: 180px;
+$marg-lay-desktop: 144px;
+$pad-inline-content-mobile: 20px;
+$pad-inline-content-desktop: 120px;
+$pad-inline-content-tablet: 72px;
