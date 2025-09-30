@@ -12,7 +12,7 @@
     padding-inline: 20px;
 
     @include on-tablet($tablet-min-width) {
-    padding-inline: 72px;
+      padding-inline: 72px;
     }
   }
 

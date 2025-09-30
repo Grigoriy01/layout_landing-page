@@ -19,9 +19,8 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 
-
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: -8px;
       display: block;

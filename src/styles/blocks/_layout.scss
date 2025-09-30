@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+
+  .section {
+    margin-top: $marg-lay;
+  }
+
+  .section:first-child,
+  .section:last-child {
+    margin-top: $marg-lay-first-last;
+  }
+}
