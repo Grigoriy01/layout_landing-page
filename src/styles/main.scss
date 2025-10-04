@@ -1,3 +1,4 @@
+@import '../utils/reset';
 @import '../utils/variables';
 @import '../utils/mixins';
 @import 'blocks/page';
@@ -7,4 +8,6 @@
 @import 'blocks/icon';
 @import 'blocks/nav';
 @import 'blocks/section';
+@import 'blocks/product';
 @import 'blocks/layout';
+@import 'blocks/layout-compare';

@@ -1,16 +1,8 @@
 .section {
-  padding-inline: $pad-inline-content-mobile;
-
-  @include on-tablet($tablet-min-width) {
-    padding-inline: $pad-inline-content-tablet;
-  }
-
-  @include on-desktop($desktop-min-width) {
-    padding-inline: $pad-inline-content-desktop;
-    }
+  @include content-padding-inline;
 
   &__title {
-    margin: 0;
+    margin-bottom: $marg-title;
     font-weight: 500;
     font-size: 32px;
     line-height: 100%;
@@ -19,18 +11,32 @@
 
     &--align-left {
       text-align: left;
+
+      @include on-tablet {
+        flex: 0 0 auto;
+        font-size: 48px;
+      }
     }
 
-    @include on-tablet($tablet-min-width) {
-      font-size: 48px;
-    }
-
-    @include on-desktop($desktop-min-width) {
+    @include on-desktop {
       font-size: 64px;
+
       &--last {
         font-size: 48px;
         font-weight: 600;
       }
+    }
+  }
+
+  &__text {
+    font-size: 23px;
+  }
+
+  &--move-free {
+    @include on-tablet {
+      display: flex;
+      align-items: start;
+      gap: 24px;
     }
   }
 }

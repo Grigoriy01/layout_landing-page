@@ -1,6 +1,7 @@
 .layout {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   .section {
     margin-top: $marg-lay-mobile;
@@ -11,13 +12,13 @@
     margin-top: $marg-lay-first-last-mobile;
   }
 
-  @include on-tablet($tablet-min-width) {
+  @include on-tablet {
     .section {
       margin-top: $marg-lay-tablet;
     }
   }
 
-  @include on-desktop($desktop-min-width) {
+  @include on-desktop {
     .section {
       margin-top: $marg-lay-desktop;
     }
@@ -29,6 +30,9 @@
     .section:last-child {
       margin-top: $marg-lay-last-desktop;
     }
-
   }
+
+  // .section:not(:first-child) {
+  //   margin: 0 auto;
+  // }
 }
