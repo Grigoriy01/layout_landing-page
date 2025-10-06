@@ -1,13 +1,11 @@
-.compare {
+.products-grid {
   margin: 0 auto;
+  display: grid;
+  row-gap: 40px;
+  justify-items: center;
 
-  &__products {
-    display: grid;
-    row-gap: 40px;
-
-    @include on-desktop {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 24px;
-    }
+  @include on-desktop {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
   }
 }

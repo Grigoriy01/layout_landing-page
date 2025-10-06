@@ -165,12 +165,16 @@
       >
         <h2 class="section__title">Compare bikes</h2>
 
-        <div class="compare__products">
+        <div class="products-grid">
           <article class="product">
             <img
-              src="./images/content-foto/cowboy-1.png"
-              alt="Sporty 4"
               class="product__foto"
+              src="./images/content-foto/cowboy-1.png"
+              srcset="
+                ./images/content-foto/cowboy-1.png   300w,
+                ./images/content-foto/cowboy-1_M.png 400w
+              "
+              alt="Sporty 4"
             />
 
             <h3 class="product__title">Sporty 4</h3>
@@ -183,9 +187,13 @@
 
           <article class="product">
             <img
-              src="./images/content-foto/cowboy-2.png"
-              alt="Ride in town ST"
               class="product__foto"
+              src="./images/content-foto/cowboy-2.png"
+              srcset="
+                ./images/content-foto/cowboy-2.png   300w,
+                ./images/content-foto/cowboy-2_M.png 400w
+              "
+              alt="Ride in town ST"
             />
 
             <h3 class="product__title">Ride in town ST</h3>
@@ -198,9 +206,13 @@
 
           <article class="product">
             <img
-              src="./images/content-foto/cowboy-3.png"
-              alt="Agile ride 3"
               class="product__foto"
+              src="./images/content-foto/cowboy-3.png"
+              srcset="
+                ./images/content-foto/cowboy-3.png   300w,
+                ./images/content-foto/cowboy-3_M.png 400w
+              "
+              alt="Agile ride 3"
             />
 
             <h3 class="product__title">Agile ride 3</h3>
@@ -218,6 +230,105 @@
         id="the-details"
       >
         <h2 class="section__title">The details</h2>
+
+        <div class="details-grid">
+          <article class="detail">
+            <div class="detail__images">
+              <img
+                class="detail__foto"
+                src="./images/content-foto/unlock-1_S.png"
+                srcset="
+                  ./images/content-foto/unlock-1_M.png 300w,
+                  ./images/content-foto/unlock-1_L.png 600w
+                "
+                alt="Sporty 4"
+              />
+              <img
+                class="detail__foto"
+                src="./images/content-foto/unlock-2_S.png"
+                srcset="
+                  ./images/content-foto/unlock-2_M.png 300w,
+                  ./images/content-foto/unlock-2_L.png 600w
+                "
+                alt="Sporty 4"
+              />
+            </div>
+
+            <h3 class="detail__title">Auto Unlock</h3>
+            <p class="detail__text">
+              The app senses when you're nearby to unlock automatically. GPS
+              tracking so you know where your bike is and can track it anytime.
+            </p>
+          </article>
+
+          <article class="detail">
+            <div class="detail__images">
+              <img
+                class="detail__foto"
+                src="./images/content-foto/light-1_S.png"
+                srcset="
+                  ./images/content-foto/light-1_M.png 300w,
+                  ./images/content-foto/light-1_L.png 600w
+                "
+                alt="Ride in town ST"
+              />
+              <img
+                class="detail__foto"
+                src="./images/content-foto/light-2_S.png"
+                srcset="
+                  ./images/content-foto/light-2_M.png 300w,
+                  ./images/content-foto/light-2_L.png 600w
+                "
+                alt="Ride in town ST"
+              />
+            </div>
+
+            <h3 class="detail__title">Range & Integrated lights</h3>
+            <p class="detail__text">
+              The removable battery has up to 70km battery autonomy and weighs
+              only 2.4 kg. Lights integrated into the frame give you always-on
+              visibility day and night.
+            </p>
+          </article>
+
+          <article class="detail">
+            <div class="detail__images detail__images--reverse-columns">
+              <img
+                class="detail__foto"
+                src="./images/content-foto/brack-1_S.png"
+                srcset="
+                  ./images/content-foto/brack-1_M.png 300w,
+                  ./images/content-foto/brack-1_L.png 600w
+                "
+                alt="Agile ride 3"
+              />
+              <img
+                class="detail__foto"
+                src="./images/content-foto/brack-2_S.png"
+                srcset="
+                  ./images/content-foto/brack-2_M.png 300w,
+                  ./images/content-foto/brack-2_L.png 600w
+                "
+                alt="Agile ride 3"
+              />
+            </div>
+
+            <h3 class="detail__title">Hydraulic disc brakes & Lightweight</h3>
+            <p class="detail__text">
+              Brakes with total stopping power the second you make contact. The
+              removable battery has up to 70km battery autonomy and weighs only
+              2.4 kg. Lights integrated into the frame give you always-on
+              visibility day and night.
+            </p>
+          </article>
+
+          <a
+            href="#"
+            class="detail__link"
+          >
+            Explore
+          </a>
+        </div>
       </section>
 
       <section

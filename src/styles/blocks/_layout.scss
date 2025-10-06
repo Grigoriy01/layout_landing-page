@@ -1,7 +1,7 @@
 .layout {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin-inline: auto;
 
   .section {
     margin-top: $marg-lay-mobile;
