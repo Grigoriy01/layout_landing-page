@@ -1,22 +1,7 @@
 .layout {
-  --colomns: 2;
-
   @include content-padding-inline;
+  @include grid-layout;
 
-  display: grid;
-  grid-template-columns: repeat(var(--colomns), 1fr);
-  column-gap: 20px;
-  margin-inline: auto;
-
-  @include on-tablet {
-    --colomns: 6;
-
-    column-gap: 24px;
-  }
-
-  @include on-desktop {
-    --colomns: 12;
-  }
   .section {
     margin-top: $marg-lay-mobile;
     grid-column: 1 /-1;

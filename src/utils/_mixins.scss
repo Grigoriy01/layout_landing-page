@@ -29,3 +29,22 @@
     #{$property}: $toValue;
   }
 }
+
+@mixin grid-layout {
+  --colomns: 2;
+
+  display: grid;
+  grid-template-columns: repeat(var(--colomns), 1fr);
+  column-gap: 20px;
+  margin-inline: auto;
+
+  @include on-tablet {
+    --colomns: 6;
+
+    column-gap: 24px;
+  }
+
+  @include on-desktop {
+    --colomns: 12;
+  }
+}
