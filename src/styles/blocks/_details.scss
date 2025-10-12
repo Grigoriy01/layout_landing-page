@@ -1,3 +1,21 @@
 .detail {
-  margin: 0;
+  display: grid;
+
+  .detail__images {
+    display: grid;
+  }
+
+  &__foto {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+  }
+
+  &__text {
+    grid-column: 1 / -1;
+  }
 }
