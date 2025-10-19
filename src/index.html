@@ -165,7 +165,7 @@
       >
         <h2 class="section__title">Compare bikes</h2>
 
-        <div class="products-grid">
+        <div class="products-grid-rows">
           <article class="product">
             <img
               class="product__foto"
@@ -226,12 +226,12 @@
       </section>
 
       <section
-        class="section details"
+        class="section"
         id="the-details"
       >
         <h2 class="section__title">The details</h2>
 
-        <div class="details-grid">
+        <div class="details-grid-rows">
           <article class="detail">
             <div class="detail__images">
               <img
@@ -321,21 +321,49 @@
               visibility day and night.
             </p>
           </article>
-
-          <a
-            href="#"
-            class="detail__link"
-          >
-            Explore
-          </a>
         </div>
+
+        <a
+          href="#"
+          class="button button--link"
+        >
+          Explore
+        </a>
       </section>
 
       <section
-        class="section contact"
+        class="section section--contact"
         id="contact-us"
       >
         <h2 class="section__title section__title--last">Contact us</h2>
+
+        <form
+          class="contact"
+          action="#"
+        >
+          <input
+            class="contact__imput"
+            type="text"
+            placeholder="Name"
+          />
+
+          <input
+            class="contact__imput"
+            type="text"
+            placeholder="Email"
+          />
+
+          <textarea
+            class="contact__imput contact__imput--area"
+            placeholder="Message"
+          ></textarea>
+
+          <input
+            class="contact__btn button"
+            type="submit"
+            value="Send"
+          />
+        </form>
       </section>
     </main>
 

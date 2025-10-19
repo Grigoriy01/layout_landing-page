@@ -14,3 +14,13 @@ a {
   text-decoration: none;
   display: inline-block;
 }
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  box-sizing: border-box;
+  resize: none;
+}
