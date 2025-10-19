@@ -37,23 +37,22 @@
     }
   }
 
-  &__text {
-    font-size: 23px;
-    line-height: 140%;
-    grid-column: span 2;
+  &.section-move-free {
+    .text-move-free {
+      @extend %text-info-product;
 
-    @include on-tablet {
-      grid-column: span 3;
-    }
+      font-weight: 500;
+      font-size: 23px;
 
-    @include on-desktop {
-      grid-column: span 6 / 12;
+      @include on-tablet {
+        grid-column: span 3;
+      }
+
+      @include on-desktop {
+        grid-column: span 6 / 12;
+      }
     }
   }
-
-  // @include on-tablet {
-  //     grid-column: 3 / 10;
-  //   }
 
   &.compare {
     @include on-tablet {
