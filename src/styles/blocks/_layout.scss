@@ -1,35 +1,38 @@
 .layout {
+  @include content-margin-block;
   @include content-padding-inline;
   @include grid-layout;
 
+  // inner margin of sections
   .section {
-    margin-top: $marg-lay-mobile;
-
-    grid-column: 1 /-1;
+    grid-column: 1 / -1;
   }
 
-  .section:first-child,
-  .section:last-child {
-    margin-top: $marg-lay-first-last-mobile;
-  }
+  .compare {
+    margin-block: 92px;
 
-  @include on-tablet {
-    .section {
-      margin-top: $marg-lay-tablet;
+    @include on-tablet {
+      margin-top: 132px;
+      margin-bottom: 0;
+      grid-column: 2 / span 4;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / -1;
+      margin-top: 164px;
     }
   }
 
-  @include on-desktop {
-    .section {
-      margin-top: $marg-lay-desktop;
+  .details {
+    margin-bottom: 80px;
+
+    @include on-tablet {
+      margin-block: 120px;
     }
 
-    .section:first-child {
-      margin-top: $marg-lay-first-desktop;
-    }
-
-    .section:last-child {
-      margin-top: $marg-lay-last-desktop;
+    @include on-desktop {
+      margin-top: 144px;
+      margin-bottom: 180px;
     }
   }
 }

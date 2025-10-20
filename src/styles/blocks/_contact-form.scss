@@ -1,4 +1,4 @@
-.contact {
+.contact-form {
   grid-column: 1 / -1;
 
   &__imput {
@@ -17,6 +17,14 @@
     &--area {
       border-radius: 16px;
       height: 148px;
+    }
+
+    &:hover {
+      box-shadow: 1px #d5d7de;
+    }
+
+    &:active {
+      box-shadow: #292929;
     }
   }
 }
