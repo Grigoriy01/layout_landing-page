@@ -1,5 +1,4 @@
 .header {
-  // display: none !important;
   color: $primary-text-color;
   box-sizing: border-box;
   height: 100vh;
@@ -39,5 +38,13 @@
     @include on-desktop {
       font-size: 80px;
     }
+  }
+
+  @include on-tablet {
+    background-image: url(/src/images/bg-img_M.png);
+  }
+
+  @include on-tablet {
+    background-image: url(/src/images/bg-img_L.png);
   }
 }

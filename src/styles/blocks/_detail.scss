@@ -18,8 +18,9 @@
         transform: scale(1.05);
       }
 
-      &--to-left {
+      &--rectangle {
         @include on-tablet {
+          height: 187px;
           grid-column: span 4;
           aspect-ratio: 2 / 1;
         }
@@ -30,8 +31,9 @@
         }
       }
 
-      &--to-right {
+      &--square {
         @include on-tablet {
+          height: 187px;
           grid-column: 5 / -1;
         }
 
@@ -43,26 +45,26 @@
     }
 
     &--reverse {
-      .detail__foto--to-left {
+      .detail__foto--rectangle {
         @include on-tablet {
           grid-column: span 2;
           height: 187px;
         }
 
         @include on-desktop {
-          grid-column: span 8;
+          grid-column: 1 / span 4;
           height: 321px;
         }
       }
 
-      .detail__foto--to-right {
+      .detail__foto--square {
         @include on-tablet {
           height: 187px;
           grid-column: 3 / -1;
         }
 
         @include on-desktop {
-          grid-column: 9 / -1;
+          grid-column: 5 / -1;
           height: 321px;
         }
       }

@@ -20,11 +20,11 @@
     }
 
     &:hover {
-      box-shadow: 1px #d5d7de;
+      border: 1px solid #D5D7DE;
     }
 
     &:active {
-      box-shadow: #292929;
+      border: 1px solid #292929;
     }
   }
 }
