@@ -83,6 +83,7 @@
       }
 
       &__label {
+        display: block;
         margin-bottom: 8px;
         font-size: 14px;
         line-height: 140%;
@@ -90,6 +91,12 @@
 
       &__value {
         font-weight: 500;
+        transition: $transition;
+
+        &:hover {
+          color: #E8E8F0A3;
+          transform: scale(1.05);
+        }
       }
 
       @include on-tablet {

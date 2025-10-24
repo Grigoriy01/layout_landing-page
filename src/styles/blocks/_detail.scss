@@ -1,73 +1,91 @@
 .detail {
   @include grid-layout;
 
+
+
   &__images {
-    display: contents;
     column-gap: 20px;
     justify-items: center;
+    display: contents;
 
     .detail__foto {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      aspect-ratio: 1 / 1;
-      display: block;
-      transition-duration: 0.3s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+        display: block;
+        transition-duration: $transition;
 
-      &:hover {
-        transform: scale(1.05);
+        &:hover {
+          transform: scale(1.05);
+        }
       }
 
-      &--rectangle {
-        @include on-tablet {
-          height: 187px;
-          grid-column: span 4;
-          aspect-ratio: 2 / 1;
-        }
+    .detail__link {
 
-        @include on-desktop {
-          grid-column: span 8;
-          height: 321px;
-        }
+      &--rectangle {
+      @include on-tablet {
+        // height: 187px;
+        grid-column: span 4;
+        aspect-ratio: 2 / 1;
+      }
+
+      @include on-desktop {
+        grid-column: span 8;
+
+        // height: 321px;
+      }
       }
 
       &--square {
-        @include on-tablet {
-          height: 187px;
-          grid-column: 5 / -1;
-        }
+      @include on-tablet {
+        // height: 187px;
+        aspect-ratio: 1 / 1;
+        grid-column: 5 / -1;
+      }
 
-        @include on-desktop {
-          grid-column: 9 / -1;
-          height: 321px;
-        }
+      @include on-desktop {
+        grid-column: 9 / -1;
+
+        // height: 321px;
+      }
       }
     }
 
     &--reverse {
-      .detail__foto--rectangle {
+
+      .detail__link {
+
+        &--rectangle {
         @include on-tablet {
+          // height: 187px;
           grid-column: span 2;
-          height: 187px;
+          aspect-ratio:  1;
         }
 
         @include on-desktop {
-          grid-column: 1 / span 4;
-          height: 321px;
-        }
-      }
+          aspect-ratio:  1;
+          grid-column: span 4;
 
-      .detail__foto--square {
+          // height: 321px;
+        }
+        }
+
+        &--square {
         @include on-tablet {
-          height: 187px;
+          // height: 187px;
           grid-column: 3 / -1;
+          aspect-ratio: 2 / 1 ;
         }
 
         @include on-desktop {
           grid-column: 5 / -1;
-          height: 321px;
+
+          // height: 321px;
+        }
         }
       }
+
     }
   }
 

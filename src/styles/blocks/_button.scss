@@ -12,6 +12,7 @@
   font-weight: $prod-title-weight;
   line-height: 27px;
   font-size: 16px;
+  transition: $transition;
 
   &:hover {
     box-shadow: 1px 4px 16px #e8e8f066;
