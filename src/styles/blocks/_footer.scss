@@ -1,5 +1,17 @@
 .footer {
   background-image: url(../images/footer-bike.png);
   background-size: cover;
-  height: 200px;
+  height: $footer-height-s;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+
+  @include on-tablet{
+    height: $footer-height-m;
+  }
+  
+  @include on-desktop{
+    height: $footer-height-l;
+  }
 }

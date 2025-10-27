@@ -1,3 +1,4 @@
+// brakepoints
 @mixin on-tablet {
   @media (min-width: $tablet-min-width) {
     @content;
@@ -11,6 +12,7 @@
   }
 }
 
+// padd. margin
 @mixin content-padding-inline {
   padding-inline: 20px;
 
@@ -37,13 +39,24 @@
   }
 }
 
+// hover
 @mixin hover($property, $toValue) {
-  transition: #{$property} 0.3s;
+  transition: #{$property} $transition;
   &:hover {
     #{$property}: $toValue;
   }
 }
 
+@mixin contacts-link-hover {
+  transition: $transition;
+
+  &:hover {
+    color: $contacts-link-color;
+    transform: scale(1.05);
+  }
+}
+
+// layout
 @mixin grid-layout {
   --colomns: 2;
 

@@ -5,11 +5,16 @@
   font-size: 16px;
   line-height: 140%;
   scroll-behavior: smooth;
-
+  padding-bottom: $footer-height-s;
+  position: relative;
+  isolation: isolate;
+  margin-inline: auto;
+  
   &__body {
     background-color: $nav-color;
     margin: 0;
   }
+  
   &__menu {
     position: fixed;
     top: 0;
@@ -17,14 +22,27 @@
     left: 0;
     opacity: 0;
     pointer-events: none;
-
+    
     transform: translateX(-100%);
-    transition: all 0.3s;
-
+    transition: all $transition;
+    
     &:target {
       transform: translateX(0);
       opacity: 1;
       pointer-events: all;
     }
+  }
+  
+  &:has(.page__menu:target) {
+    overflow: hidden;
+    height: 100dvh;
+  }
+  
+  @include on-tablet{
+    padding-bottom: $footer-height-m;
+  }
+  
+  @include on-desktop{
+    padding-bottom: $footer-height-l;
   }
 }

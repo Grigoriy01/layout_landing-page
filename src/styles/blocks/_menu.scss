@@ -3,17 +3,14 @@
   box-sizing: border-box;
   height: 100vh;
   background-color: #c2c2c2;
+  overflow: auto;
 
   &__nav {
     margin-top: 24px;
   }
 
   &__content {
-    padding-inline: 20px;
-
-    @include on-tablet {
-      padding-inline: 72px;
-    }
+    @include content-padding-inline;
   }
 
   &__phone-number {
@@ -25,6 +22,9 @@
     line-height: 27px;
     text-transform: uppercase;
     margin-top: 40px;
+    width: fit-content;
+
+    @include contacts-link-hover;
   }
 
   &__book-test {
@@ -40,5 +40,14 @@
     border-bottom: solid 1px $nav-color;
     width: fit-content;
     padding-bottom: 7px;
+
+    @include contacts-link-hover;
+  }
+
+  .top-bar--menu {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #e5e5e5;
   }
 }

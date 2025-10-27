@@ -91,12 +91,8 @@
 
       &__value {
         font-weight: 500;
-        transition: $transition;
-
-        &:hover {
-          color: #E8E8F0A3;
-          transform: scale(1.05);
-        }
+        
+        @include contacts-link-hover;
       }
 
       @include on-tablet {
