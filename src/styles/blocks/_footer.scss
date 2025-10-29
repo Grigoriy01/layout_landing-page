@@ -7,11 +7,11 @@
   width: 100%;
   z-index: -1;
 
-  @include on-tablet{
+  @include on-tablet {
     height: $footer-height-m;
   }
-  
-  @include on-desktop{
+
+  @include on-desktop {
     height: $footer-height-l;
   }
 }

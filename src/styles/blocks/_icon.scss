@@ -16,12 +16,10 @@
     position: relative;
     display: inline-flex;
     align-items: center;
-    
-    
 
     &::after {
       white-space: nowrap;
-      content: "+1 234 555-55-55";
+      content: '+1 234 555-55-55';
       position: absolute;
       color: $primary-text-color;
       font-weight: 700;
@@ -34,8 +32,8 @@
       opacity: 0;
       transition: $transition;
     }
-    &:hover::after{
-        @include on-desktop {
+    &:hover::after {
+      @include on-desktop {
         opacity: 1;
       }
     }
