@@ -7,7 +7,6 @@
 
 @mixin on-desktop {
   @media (min-width: $desktop-min-width) {
-    max-width: 1020px;
     @content;
   }
 }
