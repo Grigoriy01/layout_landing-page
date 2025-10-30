@@ -36,12 +36,4 @@
     overflow: hidden;
     height: 100dvh;
   }
-
-  @include on-tablet {
-    padding-bottom: $footer-height-m;
-  }
-
-  @include on-desktop {
-    padding-bottom: $footer-height-l;
-  }
 }
