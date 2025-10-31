@@ -1,4 +1,6 @@
 .layout {
+  background-color: $nav-color;
+
   @include content-margin-block;
   @include content-padding-inline;
   @include grid-layout;
