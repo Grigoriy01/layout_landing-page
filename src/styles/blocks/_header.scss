@@ -42,10 +42,10 @@
   }
 
   @include on-tablet {
-    background-image: url(/src/images/bg-img_M.png);
+    background-image: url(/src/images/bg-img_M.webp);
   }
 
   @include on-desktop {
-    background-image: url(/src/images/bg-img_L.png);
+    background-image: url(/src/images/bg-img_L.webp);
   }
 }
