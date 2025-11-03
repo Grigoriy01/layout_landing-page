@@ -18,9 +18,9 @@ Stylelint, Prettier, ESLint, Cypress, Jest — ensuring code quality and consist
 
 Live & Design References
 
-🌐 Live Preview
+🌐 Live Preview: https://grigoriy01.github.io/layout_landing-page/
 
-🎨 Figma Layout
+🎨 Figma Layout: https://www.figma.com/design/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0-1&p=f
 
 Setup Instructions
 
